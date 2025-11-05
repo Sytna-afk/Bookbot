@@ -1,4 +1,5 @@
 from stats import words_counter
+from stats import character_counter
 
 def get_book_text(txt_book_file):
     with open(txt_book_file, encoding = "utf-8") as file:
@@ -7,7 +8,9 @@ def get_book_text(txt_book_file):
 
 def main():
     text_content = get_book_text(r"/home/sytna/Bookbot/books/frankenstein.txt")
+    character_number = character_counter(text_content)
 
     print(words_counter(text_content))
+    print(character_number)
 
 main()
