@@ -17,5 +17,17 @@ def character_counter(string_content):
 
     return symbols_dict
 
-def sort_dictionary(dictionary):
-  dictionary
+def listing_dictionary(dictionary):
+    dictionary_list = []
+    key_dictionary = {}
+    for key, value in dictionary.items():
+        key_dictionary = {"char": key, "num": value}
+        dictionary_list.append(key_dictionary)
+    return dictionary_list
+
+def sort_on(dict_list):
+    return dict_list["num"]
+
+def sort_list_dictionary(dict_list):
+    dict_list.sort(reverse = True,key=sort_on)
+    return dict_list
