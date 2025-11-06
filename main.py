@@ -1,5 +1,6 @@
 from stats import words_counter
 from stats import character_counter
+from stats import sort_dictionary
 
 def get_book_text(txt_book_file):
     with open(txt_book_file, encoding = "utf-8") as file:
@@ -11,6 +12,8 @@ def main():
     character_number = character_counter(text_content)
 
     print(words_counter(text_content))
+    sort_dictionary(character_number)
     print(character_number)
+
 
 main()

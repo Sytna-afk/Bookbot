@@ -17,4 +17,5 @@ def character_counter(string_content):
 
     return symbols_dict
 
-
+def sort_dictionary(dictionary):
+  dictionary
